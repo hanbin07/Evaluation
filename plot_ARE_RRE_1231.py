@@ -39,9 +39,8 @@ ozlist = []
 output_list = [] 
 
 
-#"C:/Users/HANBIN/Desktop/MAXST관련/SensorFusion결과/BEST/ismar_c8_3.txt
 
-with open("C:/Users/HANBIN/Desktop/MAXST관련/SensorFusion결과/BEST/ismar_c5_3.txt") as csv_file:
+with open(<Datapath>) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=" ")
     for row in csv_reader:
         
@@ -81,12 +80,8 @@ gzlist = []
 
 gt_data_list = []
 
-#MH_01_EASY
-#'C:/Users/HANBIN/Desktop/EurocData/MH_02_easy/mav0/state_groundtruth_estimate0/data.csv'
-#'D:/Visual-Inertial_SLAM_Dataset/ISMAR_benchmark/dataset/C5_train/C5_train/groundtruth/data.csv'
 
-#'D:/Visual-Inertial_SLAM_Dataset/C8_train/C8_train/groundtruth/data.csv'
-with open('D:/Visual-Inertial_SLAM_Dataset/C5_train/C5_train/groundtruth/data.csv') as csv_file:
+with open(<datapath>) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
